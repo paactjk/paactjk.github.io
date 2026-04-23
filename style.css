@@ -7,28 +7,49 @@
 }
 
 body {
-    margin: 2em;
+    margin: 1em;
+}
+
+.ai {
+    display: flex;
+    gap: 5px;
+}
+
+.ai button {
+    background: #ccc;
+    border: none;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.ai button:hover {
+    background: #999;
+}
+
+.input-field {
+    display: flex;
+}
+
+.submit {
+    flex: 1;
+    margin-left: 10px;
+    text-align: center;
 }
 
 input {
+    flex: 3;
     display: flex;
     width: 90%;
     height: 2em;
-    margin: 20px auto;
+    margin-bottom: 5px;
     padding-left: 10px;
     border: #999 solid 1px;
     border-radius: 5px;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
 .board {
     display: flex;
-    gap: 2em;
-    align-items: flex-end;
+    align-items: center;
 }
 
 li {
@@ -38,8 +59,13 @@ li {
 .contexts {
     display: flex;
     flex-direction: column;
-    flex: 0.5;
+    flex: 1;
     justify-content: right;
+    margin-top: 30px;
+}
+
+.contexts li {
+    margin: 20px 6px;
 }
 
 .icons {
@@ -47,22 +73,52 @@ li {
 }
 
 table {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 
+tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th, td {
+    flex: 1;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+}
+
 button {
+    width: 100%;
     text-align: center;
-    padding: 2em;
+    padding: 1em 1em;
     background-color: cadetblue;
     border: black solid 1px;
     border-radius: 10px;
-    margin: 2px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 button:hover {
     background-color: rgb(76, 128, 130);
 }
 
+.fanboys {
+    margin-top: 6px;
+}
 
+.fanboys-list {
+    display: flex;
+}
+
+.fanboys-list li {
+    flex: 1;
+    margin: auto 3px;
+    display: flex;
+    justify-content: center;
+}

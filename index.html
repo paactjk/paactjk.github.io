@@ -8,9 +8,26 @@
 </head>
 <body>
   <header>
-    <h1>PAAC</h1>
-    <input type="text" placeholder="User input...">
-    <!-- ai-generated prompts -->
+    <h1 style="display: none;">PAAC</h1>
+    <div class="input-field">
+      <input type="text" placeholder="User input..." id="input">
+      <input type="submit" value="Send" class="submit" onclick="handleSend()">
+    </div>
+    <div class="ai">
+      <!-- ai-generated prompts -->
+      <button onclick="handleIconClick('AI-generated prompt')">
+        AI-generated prompt
+      </button>
+      <button onclick="handleIconClick('AI-generated prompt')">
+        AI-generated prompt
+      </button>
+      <button onclick="handleIconClick('AI-generated prompt')">
+        AI-generated prompt
+      </button>
+      <button onclick="handleIconClick('AI-generated prompt')">
+        AI-generated prompt
+      </button>
+    </div>
   </header>
 
   <main>
@@ -18,29 +35,28 @@
     <div class="board">
       <!-- Contexts -->
       <div class="contexts">
-        <h2>Contexts</h2>
         <ul>
           <li>
-            <button>
-              <img>
+            <button onclick="handleContextClick('Food')">
+              <img src="assets/icon.png" width=35rem height=35rem>
               Food
             </button>
           </li>
           <li>
-            <button>
-              <img>
+            <button onclick="handleContextClick('Family')">
+              <img src="assets/icon.png" width=35rem height=35rem>
               Family
             </button>
           </li>
           <li>
-            <button>
-              <img>
+            <button onclick="handleContextClick('School')">
+              <img src="assets/icon.png" width=35rem height=35rem>
               School
             </button>
           </li>
           <li>
-            <button>
-              <img>
+            <button onclick="handleContextClick('Health')">
+              <img src="assets/icon.png" width=35rem height=35rem>
               Health
             </button>
           </li>
@@ -49,7 +65,6 @@
     
       <!-- icons -->
       <div class="icons">
-        <h2>Icons</h2>
         <table>
           <!-- header row -->
           <tr>
@@ -63,33 +78,33 @@
           <!-- first row -->
           <tr>
             <td>
-              <button>
-                <img>
+              <button onclick="handleIconClick('I')">
+                <img src="assets/icon.png" width=35rem height=35rem>
                 I
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Want
+              <button onclick="handleIconClick('want')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                want
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Quiet
+              <button onclick="handleIconClick('quiet')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                quiet
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                In
+              <button onclick="handleIconClick('in')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                in
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                What
+              <button onclick="handleIconClick('what')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                what
               </button>
             </td>
           </tr>
@@ -97,33 +112,33 @@
           <!-- second row -->
           <tr>
             <td>
-              <button>
-                <img>
-                You
+              <button onclick="handleIconClick('you')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                you
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Need
+              <button onclick="handleIconClick('need')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                need
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Loud
+              <button onclick="handleIconClick('loud')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                loud
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                On
+              <button onclick="handleIconClick('on')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                on
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Who
+              <button onclick="handleIconClick('who')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                who
               </button>
             </td>
           </tr>
@@ -131,33 +146,33 @@
           <!-- third row -->
           <tr>
             <td>
-              <button>
-                <img>
-                They
+              <button onclick="handleIconClick('they')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                they
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Feel
+              <button onclick="handleIconClick('feel')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                feel
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Same
+              <button onclick="handleIconClick('same')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                same
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Off
+              <button onclick="handleIconClick('off')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                off
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Where
+              <button onclick="handleIconClick('where')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                where
               </button>
             </td>
           </tr>
@@ -165,33 +180,33 @@
           <!-- fourth row -->
           <tr>
             <td>
-              <button>
-                <img>
-                It
+              <button onclick="handleIconClick('it')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                it
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Help
+              <button onclick="handleIconClick('help')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                help
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Different
+              <button onclick="handleIconClick('different')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                different
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                By
+              <button onclick="handleIconClick('by')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                by
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                When
+              <button onclick="handleIconClick('when')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                when
               </button>
             </td>
           </tr>
@@ -199,39 +214,88 @@
           <!-- fifth row -->
           <tr>
             <td>
-              <button>
-                <img>
-                We
+              <button onclick="handleIconClick('we')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                we
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Like
+              <button onclick="handleIconClick('like')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                like
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                More
+              <button onclick="handleIconClick('more')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                more
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                To
+              <button onclick="handleIconClick('to')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                to
               </button>
             </td>
             <td>
-              <button>
-                <img>
-                Why
+              <button onclick="handleIconClick('why')">
+                <img src="assets/icon.png" width=35rem height=35rem>
+                why
               </button>
             </td>
           </tr>
         </table>
       </div>
+
+    </div>
+    <div class="fanboys">
+      <ul class="fanboys-list">
+        <li>
+          <button onclick="handleIconClick('for')">
+              <img src="assets/icon.png" width=35rem height=35rem>
+              for
+            </button>
+        </li>
+        <li>
+          <button onclick="handleIconClick('and')">
+              <img src="assets/icon.png" width=35rem height=35rem>
+              and
+            </button>
+        </li>
+        <li>
+          <button onclick="handleIconClick('nor')">
+              <img src="assets/icon.png" width=35rem height=35rem>
+              nor
+            </button>
+        </li>
+        <li>
+          <button onclick="handleIconClick('but')">
+              <img src="assets/icon.png" width=35rem height=35rem>
+              but
+            </button>
+        </li>
+        <li>
+          <button onclick="handleIconClick('or')">
+              <img src="assets/icon.png" width=35rem height=35rem>
+              or
+            </button>
+        </li>
+        <li>
+          <button onclick="handleIconClick('yet')">
+              <img src="assets/icon.png" width=35rem height=35rem>
+              yet
+            </button>
+        </li>
+        <li>
+          <button onclick="handleIconClick('so')">
+              <img src="assets/icon.png" width=35rem height=35rem>
+              so
+            </button>
+        </li>
+      </ul>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
