@@ -37,7 +37,7 @@ body {
 }
 
 input {
-    flex: 3;
+    flex: 5;
     display: flex;
     width: 90%;
     height: 2em;
