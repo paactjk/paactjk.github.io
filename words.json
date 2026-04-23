@@ -1,0 +1,112 @@
+{
+    "pronouns": [
+        {
+            "img": "assets/I.png",
+            "text": "I"
+        },
+        {
+            "img": "assets/you.png",
+            "text": "you"
+        },
+        {
+            "img": "assets/they.png",
+            "text": "they"
+        },
+        {
+            "img": "assets/it.png",
+            "text": "it"
+        },
+        {
+            "img": "assets/we.png",
+            "text": "we"
+        }
+    ],
+    "verbs": [
+        {
+            "img": "assets/want.png",
+            "text": "want"
+        },
+        {
+            "img": "assets/need.png",
+            "text": "need"
+        },
+        {
+            "img": "assets/feel.png",
+            "text": "feel"
+        },
+        {
+            "img": "assets/help.png",
+            "text": "help"
+        },
+        {
+            "img": "assets/like.png",
+            "text": "like"
+        }
+    ],
+    "adjectives": [
+        {
+            "img": "assets/quiet.png",
+            "text": "quiet"
+        },
+        {
+            "img": "assets/loud.png",
+            "text": "loud"
+        },
+        {
+            "img": "assets/same.png",
+            "text": "same"
+        },
+        {
+            "img": "assets/different.png",
+            "text": "different"
+        },
+        {
+            "img": "assets/more.png",
+            "text": "more"
+        }
+    ],
+    "prepositions": [
+        {
+            "img": "assets/in.png",
+            "text": "in"
+        },
+        {
+            "img": "assets/on.png",
+            "text": "on"
+        },
+        {
+            "img": "assets/off.png",
+            "text": "off"
+        },
+        {
+            "img": "assets/by.png",
+            "text": "by"
+        },
+        {
+            "img": "assets/to.png",
+            "text": "to"
+        }
+    ],
+    "questions": [
+        {
+            "img": "assets/what.png",
+            "text": "what"
+        },
+        {
+            "img": "assets/where.png",
+            "text": "where"
+        },
+        {
+            "img": "assets/when.png",
+            "text": "when"
+        },
+        {
+            "img": "assets/who.png",
+            "text": "who"
+        },
+        {
+            "img": "assets/why.png",
+            "text": "why"
+        }
+    ]
+}

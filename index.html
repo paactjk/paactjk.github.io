@@ -9,11 +9,13 @@
 <body>
   <header>
     <h1 style="display: none;">PAAC</h1>
+    
     <div class="input-field">
       <input type="text" placeholder="User input..." id="input">
       <input type="submit" value="Clear" class="submit" onclick="handleClear()">
       <input type="submit" value="Send" class="submit" onclick="handleSend()">
     </div>
+
     <div class="ai">
       <!-- ai-generated prompts -->
       <button onclick="handleIconClick('AI-generated prompt')">
@@ -34,7 +36,7 @@
   <main>
     
     <div class="board">
-      <!-- Contexts -->
+      <!-- contexts -->
       <div class="contexts">
         <ul>
           <li>
@@ -67,233 +69,23 @@
       <!-- icons -->
       <div class="icons">
         <table>
-          <!-- header row -->
-          <tr>
-            <th>Pronouns</th>
-            <th>Verbs</th>
-            <th>Adjectives</th>
-            <th>Prepositions</th>
-            <th>Questions</th>
-          </tr>
-    
-          <!-- first row -->
-          <tr>
-            <td>
-              <button onclick="handleIconClick('I')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                I
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('want')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                want
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('quiet')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                quiet
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('in')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                in
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('what')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                what
-              </button>
-            </td>
-          </tr>
-    
-          <!-- second row -->
-          <tr>
-            <td>
-              <button onclick="handleIconClick('you')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                you
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('need')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                need
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('loud')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                loud
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('on')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                on
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('who')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                who
-              </button>
-            </td>
-          </tr>
-    
-          <!-- third row -->
-          <tr>
-            <td>
-              <button onclick="handleIconClick('they')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                they
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('feel')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                feel
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('same')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                same
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('off')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                off
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('where')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                where
-              </button>
-            </td>
-          </tr>
-    
-          <!-- fourth row -->
-          <tr>
-            <td>
-              <button onclick="handleIconClick('it')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                it
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('help')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                help
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('different')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                different
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('by')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                by
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('when')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                when
-              </button>
-            </td>
-          </tr>
-    
-          <!-- fifth row -->
-          <tr>
-            <td>
-              <button onclick="handleIconClick('we')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                we
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('like')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                like
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('more')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                more
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('to')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                to
-              </button>
-            </td>
-            <td>
-              <button onclick="handleIconClick('why')">
-                <img src="assets/icon.png" width=35rem height=35rem>
-                why
-              </button>
-            </td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Pronouns</th>
+              <th>Verbs</th>
+              <th>Adjectives</th>
+              <th>Prepositions</th>
+              <th>Questions</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
         </table>
       </div>
-
     </div>
+
+    <!-- fanboy conjunctions -->
     <div class="fanboys">
-      <ul class="fanboys-list">
-        <li>
-          <button onclick="handleIconClick('for')">
-              <img src="assets/icon.png" width=35rem height=35rem>
-              for
-            </button>
-        </li>
-        <li>
-          <button onclick="handleIconClick('and')">
-              <img src="assets/icon.png" width=35rem height=35rem>
-              and
-            </button>
-        </li>
-        <li>
-          <button onclick="handleIconClick('nor')">
-              <img src="assets/icon.png" width=35rem height=35rem>
-              nor
-            </button>
-        </li>
-        <li>
-          <button onclick="handleIconClick('but')">
-              <img src="assets/icon.png" width=35rem height=35rem>
-              but
-            </button>
-        </li>
-        <li>
-          <button onclick="handleIconClick('or')">
-              <img src="assets/icon.png" width=35rem height=35rem>
-              or
-            </button>
-        </li>
-        <li>
-          <button onclick="handleIconClick('yet')">
-              <img src="assets/icon.png" width=35rem height=35rem>
-              yet
-            </button>
-        </li>
-        <li>
-          <button onclick="handleIconClick('so')">
-              <img src="assets/icon.png" width=35rem height=35rem>
-              so
-            </button>
-        </li>
-      </ul>
+      <ul class="fanboys-list"></ul>
     </div>
   </main>
 
