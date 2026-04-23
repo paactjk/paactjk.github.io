@@ -2,6 +2,8 @@ const input = document.getElementById("input");
 
 const handleIconClick = (str) => {
     input.value += ' ' + str;
+    let utterance = new SpeechSynthesisUtterance(str);
+    speechSynthesis.speak(utterance);
 }
 
 const handleSend = () => {
