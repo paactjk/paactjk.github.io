@@ -9,3 +9,7 @@ const handleSend = () => {
     speechSynthesis.speak(utterance);
     input.value = "";
 }
+
+const handleClear = () => {
+    input.value = "";
+}
