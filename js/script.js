@@ -35,7 +35,7 @@ const colors = [
 
 // icons
 
-const table = fetch('./words.json')
+const table = fetch('/js/words.json')
 .then(res => res.json())
 .then(data => {
     populateTable(data)
@@ -69,7 +69,7 @@ function populateTable(data) {
 
 // fanboys conjunctions
 
-const fanboys = fetch('./fanboys.json')
+const fanboys = fetch('/js/fanboys.json')
     .then(res => res.json())
     .then(data => {
         populateFanboys(data.fanboys)
