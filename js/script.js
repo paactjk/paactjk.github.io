@@ -55,7 +55,7 @@ function populateTable(data) {
                 return `
                     <td>
                         <button style="background-color: ${colors[i + 2]}" onclick="handleIconClick('${word.text}')">
-                            <img src="assets/icon.png" alt="${word.text}" width="35" height="35">
+                            <img src="${word.img}" alt="${word.text}" width="50" height="50">
                             <br />
                             ${word.text}
                         </button>
