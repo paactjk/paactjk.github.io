@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
 }
 
@@ -109,10 +109,11 @@ th, td {
 }
 
 button {
-    width: 100%;
+    width: 90%;
+    height: auto;
     text-align: center;
     padding: 1em 1em;
-    background-color: #2d7fd0;
+    background-color: #9f8be8;
     border: none;
     border-radius: 10px;
     display: flex;
@@ -124,7 +125,7 @@ button {
 
 .page-btn {
     width: 60%;
-    height: 130px;
+    height: auto;
 }
 
 button:focus-visible,
@@ -154,11 +155,11 @@ button:focus-visible {
 }
 
 .home-btn {
-    background-color: #C8A400;
+    background-color: #efd9ce;
     font-weight: bold;
     font-size: 1rem;
     width: 80%;
-    height: 130px;
+    height: auto;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -166,7 +167,7 @@ button:focus-visible {
 }
 
 .home-btn:hover {
-    background-color: #A88A00;
+    background-color: #efd9ce;
 }
 
 .keyboard-btn-container {
