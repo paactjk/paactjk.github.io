@@ -186,13 +186,13 @@ const updateKeyboardPreview = () => {
 
 // button colors
 const colors = [
-    "#14A25B",
-    "#2D7FD0",
-    "#7348B9",
-    "#D043A6",
-    "#FF4B75",
-    "#FF7F35",
-    "#FFBB3E"
+    "#79addc",
+    "#118ab2",
+    "#ef476f",
+    "#f78c6b",
+    "#ffd166",
+    "#ffee93",
+    "#06d6a0"
 ];
 
 
