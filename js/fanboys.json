@@ -1,16 +1,20 @@
 {
     "fanboys": [
         {
+            "img": "assets/yes.png",
+            "text": "yes"
+        },
+        {
+            "img": "assets/no.png",
+            "text": "no"
+        },
+        {
             "img": "assets/for.png",
             "text": "for"
         },
         {
             "img": "assets/and.png",
             "text": "and"
-        },
-        {
-            "img": "assets/nor.png",
-            "text": "nor"
         },
         {
             "img": "assets/but.png",
@@ -21,12 +25,8 @@
             "text": "or"
         },
         {
-            "img": "assets/yet.png",
-            "text": "yet"
-        },
-        {
-            "img": "assets/so.png",
-            "text": "so"
+            "img": "assets/because.png",
+            "text": "because"
         }
     ]
 }

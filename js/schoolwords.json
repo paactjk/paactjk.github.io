@@ -1,0 +1,112 @@
+{
+    "Homework": [
+        {
+            "img": "assets/duedate.png",
+            "text": "Due Date"
+        },
+        {
+            "img": "assets/hard.png",
+            "text": "Hard"
+        },
+        {
+            "img": "assets/easy.png",
+            "text": "Easy"
+        },
+        {
+            "img": "assets/help.png",
+            "text": "Help"
+        },
+        {
+            "img": "assets/complete.png",
+            "text": "Complete"
+        }
+    ],
+    "Math": [
+        {
+            "img": "assets/plus.png",
+            "text": "Plus"
+        },
+        {
+            "img": "assets/subtract.png",
+            "text": "Subtract"
+        },
+        {
+            "img": "assets/multiply.png",
+            "text": "Multiply"
+        },
+        {
+            "img": "assets/divide.png",
+            "text": "Divide"
+        },
+        {
+            "img": "assets/equation.png",
+            "text": "Equation"
+        }
+    ],
+    "English": [
+        {
+            "img": "assets/letter.png",
+            "text": "Letter"
+        },        
+        {
+            "img": "assets/punctuation.png",
+            "text": "Punctuation"
+        },
+        {
+            "img": "assets/grammar.png",
+            "text": "Grammar"
+        },
+        {
+            "img": "assets/reading.png",
+            "text": "Reading"
+        },
+        {
+            "img": "assets/write.png",
+            "text": "Write"
+        }
+    ],
+    "Science": [
+        {
+            "img": "assets/biology.png",
+            "text": "Biology"
+        },
+        {
+            "img": "assets/physics.png",
+            "text": "Physics"
+        },
+        {
+            "img": "assets/chemistry.png",
+            "text": "Chemistry"
+        },
+        {
+            "img": "assets/experiment.png",
+            "text": "Experiment"
+        },
+        {
+            "img": "assets/lab.png",
+            "text": "Lab"
+        }
+    ],
+    "Work": [
+        {
+            "img": "assets/homework.png",
+            "text": "Homework"
+        },
+        {
+            "img": "assets/paper.png",
+            "text": "Paper"
+        },
+        {
+            "img": "assets/test.png",
+            "text": "test"
+        },
+        {
+            "img": "assets/book.png",
+            "text": "Book"
+        },
+        {
+            "img": "assets/project.png",
+            "text": "Project"
+        }
+    ]
+}

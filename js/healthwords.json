@@ -1,0 +1,112 @@
+{
+    "Body Part": [
+        {
+            "img": "assets/head.png",
+            "text": "Head"
+        },
+        {
+            "img": "assets/arm.png",
+            "text": "Arm"
+        },
+        {
+            "img": "assets/leg.png",
+            "text": "Leg"
+        },
+        {
+            "img": "assets/foot.png",
+            "text": "Foot"
+        },
+        {
+            "img": "assets/belly.png",
+            "text": "Belly"
+        }
+    ],
+    "Hurt Scale": [
+        {
+            "img": "assets/lowlow.png",
+            "text": "Low"
+        },
+        {
+            "img": "assets/lowmid.png",
+            "text": "Low Middle"
+        },
+        {
+            "img": "assets/mid.png",
+            "text": "Middle"
+        },
+        {
+            "img": "assets/highmid.png",
+            "text": "High Middle"
+        },
+        {
+            "img": "assets/high.png",
+            "text": "High"
+        }
+    ],
+    "Doctor/Dentist": [
+        {
+            "img": "assets/appointment.png",
+            "text": "Appointment"
+        },
+        {
+            "img": "assets/tooth.png",
+            "text": "Tooth"
+        },
+        {
+            "img": "assets/mouth.png",
+            "text": "Mouth"
+        },
+        {
+            "img": "assets/sprain.png",
+            "text": "Sprain"
+        },
+        {
+            "img": "assets/sick.png",
+            "text": "Sick"
+        }
+    ],
+    "Therapist": [
+        {
+            "img": "assets/sad.png",
+            "text": "Sad"
+        },
+        {
+            "img": "assets/happy.png",
+            "text": "Happy"
+        },
+        {
+            "img": "assets/mad.png",
+            "text": "Mad"
+        },
+        {
+            "img": "assets/talk.png",
+            "text": "talk"
+        },
+        {
+            "img": "assets/feel.png",
+            "text": "Feel"
+        }
+    ],
+    "Medication": [
+        {
+            "img": "assets/take.png",
+            "text": "Take"
+        },
+        {
+            "img": "assets/meds.png",
+            "text": "Meds"
+        },
+        {
+            "img": "assets/empty.png",
+            "text": "Empty"
+        },
+        {
+            "img": "assets/full.png",
+            "text": "Full"
+        },
+        {
+            "img": "assets/need.png",
+            "text": "Need"
+        }
+    ]
+}

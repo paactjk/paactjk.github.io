@@ -1,0 +1,112 @@
+{
+    "Mom": [
+        {
+            "img": "assets/drive.png",
+            "text": "Drive"
+        },
+        {
+            "img": "assets/garden.png",
+            "text": "Garden"
+        },
+        {
+            "img": "assets/craft.png",
+            "text": "Craft"
+        },
+        {
+            "img": "assets/store.png",
+            "text": "Store"
+        },
+        {
+            "img": "assets/tv.png",
+            "text": "Tv"
+        }
+    ],
+    "Dad": [
+        {
+            "img": "assets/fishing.png",
+            "text": "Fishing"
+        },
+        {
+            "img": "assets/catch.png",
+            "text": "Catch"
+        },
+        {
+            "img": "assets/woodworking.png",
+            "text": "Woodworking"
+        },
+        {
+            "img": "assets/cook.png",
+            "text": "Cook"
+        },
+        {
+            "img": "assets/bike.png",
+            "text": "Ride Bike"
+        }
+    ],
+    "Brother": [
+        {
+            "img": "assets/legos.png",
+            "text": "Legos"
+        },
+        {
+            "img": "assets/outside.png",
+            "text": "Outside"
+        },
+        {
+            "img": "assets/boardgame.png",
+            "text": "Board Game"
+        },
+        {
+            "img": "assets/fight.png",
+            "text": "Fight"
+        },
+        {
+            "img": "assets/videogame.png",
+            "text": "Videogame"
+        }
+    ],
+    "Sister": [
+        {
+            "img": "assets/bake.png",
+            "text": "Bake"
+        },
+        {
+            "img": "assets/sing.png",
+            "text": "Sing"
+        },
+        {
+            "img": "assets/dressup.png",
+            "text": "Dress Up"
+        },
+        {
+            "img": "assets/dolls.png",
+            "text": "Dolls"
+        },
+        {
+            "img": "assets/draw.png",
+            "text": "Draw"
+        }
+    ],
+    "Grandparents": [
+        {
+            "img": "assets/movie.png",
+            "text": "Movie"
+        },
+        {
+            "img": "assets/walkdog.png",
+            "text": "Walk Dog"
+        },
+        {
+            "img": "assets/read.png",
+            "text": "Read"
+        },
+        {
+            "img": "assets/piano.png",
+            "text": "Piano"
+        },
+        {
+            "img": "assets/park.png",
+            "text": "Park"
+        }
+    ]
+}

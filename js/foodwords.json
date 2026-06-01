@@ -1,0 +1,112 @@
+{
+    "Fruits": [
+        {
+            "img": "assets/apple.png",
+            "text": "Apple"
+        },
+        {
+            "img": "assets/orange.png",
+            "text": "Orange"
+        },
+        {
+            "img": "assets/banana.png",
+            "text": "Banana"
+        },
+        {
+            "img": "assets/watermelon.png",
+            "text": "Watermelon"
+        },
+        {
+            "img": "assets/strawberry.png",
+            "text": "Strawberry"
+        }
+    ],
+    "Vegetables": [
+        {
+            "img": "assets/carrot.png",
+            "text": "Carrot"
+        },
+        {
+            "img": "assets/celery.png",
+            "text": "Celery"
+        },
+        {
+            "img": "assets/greenbean.png",
+            "text": "Green Bean"
+        },
+        {
+            "img": "assets/tomato.png",
+            "text": "Tomato"
+        },
+        {
+            "img": "assets/corn.png",
+            "text": "Corn"
+        }
+    ],
+    "Snack": [
+        {
+            "img": "assets/chips.png",
+            "text": "Chips"
+        },
+        {
+            "img": "assets/fruitsnacks.png",
+            "text": "Fruit Snacks"
+        },
+        {
+            "img": "assets/granolabar.png",
+            "text": "Granola Bar"
+        },
+        {
+            "img": "assets/applesauce.png",
+            "text": "Apple Sauce"
+        },
+        {
+            "img": "assets/candy.png",
+            "text": "Candy"
+        }
+    ],
+    "Meat": [
+        {
+            "img": "assets/beef.png",
+            "text": "Beef"
+        },
+        {
+            "img": "assets/chicken.png",
+            "text": "Chicken"
+        },
+        {
+            "img": "assets/pork.png",
+            "text": "Pork"
+        },
+        {
+            "img": "assets/fish.png",
+            "text": "Fish"
+        },
+        {
+            "img": "assets/turkey.png",
+            "text": "Turkey"
+        }
+    ],
+    "Dairy": [
+        {
+            "img": "assets/milk.png",
+            "text": "Milk"
+        },
+        {
+            "img": "assets/yogurt.png",
+            "text": "Yogurt"
+        },
+        {
+            "img": "assets/icecream.png",
+            "text": "Ice Cream"
+        },
+        {
+            "img": "assets/cheese.png",
+            "text": "Cheese"
+        },
+        {
+            "img": "assets/milkshake.png",
+            "text": "Milkshake"
+        }
+    ]
+}
