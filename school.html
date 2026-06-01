@@ -6,8 +6,158 @@
     <title>PAAC | School</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- content here -->
-    <script src="js/script.js"></script>
+
+<!-- Screen reader announcements -->
+<div
+  id="status"
+  class="sr-only"
+  aria-live="polite"
+  aria-atomic="true">
+</div>
+
+<header>
+    <h1 style="display: none;">PAAC</h1>
+
+    <div class="input-field">
+      <input type="text" placeholder="User input..." id="input">
+      <input type="submit" value="Clear" class="submit" onclick="handleClear()">
+      <input type="submit" value="Send" class="submit" onclick="handleSend()">
+    </div>
+
+    <div class="ai">
+      <!-- ai-generated prompts -->
+       <!-- TODO: make it actually take in prompts -->
+      <button onclick="handleIconClick('AI-generated prompt')">
+        AI-generated prompt
+      </button>
+      <button onclick="handleIconClick('AI-generated prompt')">
+        AI-generated prompt
+      </button>
+      <button onclick="handleIconClick('AI-generated prompt')">
+        AI-generated prompt
+      </button>
+      <button onclick="handleIconClick('AI-generated prompt')">
+        AI-generated prompt
+      </button>
+    </div>
+  </header>
+
+<!-- KEYBOARD OVERLAY -->
+  <h2 id="keyboard-title" class="sr-only">
+    On-screen keyboard
+  </h2>
+  <div id="keyboard-overlay" class="keyboard-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="keyboard-title">
+  <div class="keyboard-close-bar">
+    <button class="keyboard-close" aria-label="Close keyboard" onclick="toggleKeyboard()"> ✕ Close </button>
+  </div>
+  <div class="keyboard-modal">
+    <div class="keyboard-header">
+      <span class="keyboard-preview" id="keyboard-preview"></span>
+    </div>
+    <div class="keyboard-keys">
+      <!-- Letter rows -->
+      <div class="keyboard-row" id="row-letters-1">
+        <button onclick="keyPress('q')">q</button><button onclick="keyPress('w')">w</button><button onclick="keyPress('e')">e</button><button onclick="keyPress('r')">r</button><button onclick="keyPress('t')">t</button><button onclick="keyPress('y')">y</button><button onclick="keyPress('u')">u</button><button onclick="keyPress('i')">i</button><button onclick="keyPress('o')">o</button><button onclick="keyPress('p')">p</button>
+      </div>
+      <div class="keyboard-row" id="row-letters-2">
+        <button onclick="keyPress('a')">a</button><button onclick="keyPress('s')">s</button><button onclick="keyPress('d')">d</button><button onclick="keyPress('f')">f</button><button onclick="keyPress('g')">g</button><button onclick="keyPress('h')">h</button><button onclick="keyPress('j')">j</button><button onclick="keyPress('k')">k</button><button onclick="keyPress('l')">l</button>
+      </div>
+      <div class="keyboard-row" id="row-letters-3">
+        <button class="key-wide" onclick="toggleCaps()">⇧ Caps</button>
+        <button onclick="keyPress('z')">z</button><button onclick="keyPress('x')">x</button><button onclick="keyPress('c')">c</button><button onclick="keyPress('v')">v</button><button onclick="keyPress('b')">b</button><button onclick="keyPress('n')">n</button><button onclick="keyPress('m')">m</button>
+        <button class="key-wide" onclick="keyPress('backspace')">⌫</button>
+      </div>
+      <!-- Number rows -->
+      <div class="keyboard-row hidden" id="row-numbers-1">
+        <button onclick="keyPress('1')">1</button><button onclick="keyPress('2')">2</button><button onclick="keyPress('3')">3</button><button onclick="keyPress('4')">4</button><button onclick="keyPress('5')">5</button><button onclick="keyPress('6')">6</button><button onclick="keyPress('7')">7</button><button onclick="keyPress('8')">8</button><button onclick="keyPress('9')">9</button><button onclick="keyPress('0')">0</button>
+      </div>
+      <div class="keyboard-row hidden" id="row-numbers-2">
+        <button onclick="keyPress('-')">-</button><button onclick="keyPress('/')">/ </button><button onclick="keyPress(':')">:</button><button onclick="keyPress(';')">;</button><button onclick="keyPress('()')">()</button><button onclick="keyPress('$')">$</button><button onclick="keyPress('&')">&</button><button onclick="keyPress('@')">@</button><button onclick="keyPress('&quot;')">"</button>
+      </div>
+      <div class="keyboard-row hidden" id="row-numbers-3">
+        <button onclick="keyPress('.')">.</button><button onclick="keyPress(',')"> ,</button><button onclick="keyPress('?')">?</button><button onclick="keyPress('!')">!</button><button onclick="keyPress(`'`)">'</button>
+        <button class="key-wide" onclick="keyPress('backspace')">⌫</button>
+      </div>
+      <!-- Bottom row -->
+      <div class="keyboard-row">
+        <button class="key-wide" id="toggle-123-btn" onclick="toggleNumbers()">123</button>
+        <button class="key-wide key-clear" onclick="keyboardClear()">Clear</button>
+        <button class="key-space" onclick="keyPress(' ')">space</button>
+        <button class="key-wide" onclick="keyPress('.')">.</button>
+        <button class="key-wide key-done" onclick="toggleKeyboard()">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <main>
+    
+    <div class="board">
+      <!-- contexts -->
+      <!-- TODO: change so that more words pop up when you click on these -> handleContextClick -->
+      <div class="contexts">
+        <ul>
+          <li>
+            <button class="keyboard-btn" onclick="toggleKeyboard()">⌨ Keyboard</button>
+          </li>
+          <li>
+            <button class="page-btn" onclick="window.location.href='food.html'">
+                <img src="assets/food.png" width="35" height="35">
+                Food Page
+            </button>
+          </li>
+          <li>
+            <button class="page-btn" onclick="window.location.href='family.html'">
+              <img src="assets/family.png" width=35rem height=35rem>
+              Family Page
+            </button>
+          </li>
+          <li>
+            <button class="page-btn" onclick="window.location.href='school.html'">
+              <img src="assets/school.png" width=35rem height=35rem>
+              School Page
+            </button>
+          </li>
+          <li>
+            <button class="page-btn" onclick="window.location.href='health.html'">
+              <img src="assets/health.png" width=35rem height=35rem>
+              Health Page
+            </button>
+          </li>
+          <!-- home button -->
+           <!-- TODO: Put home button in remaining context pages -->
+          <li>
+            <button class="home-btn" onclick="window.location.href='index.html'">
+              <img src="assets/back.png" width=35rem height=35rem>
+              Back
+            </button>
+          </li>
+        </ul>
+      </div>
+    
+      <!-- icons -->
+      <div class="icons">
+        <table>
+          <thead>
+            <tr>
+              <th>Homework</th>
+              <th>Math</th>
+              <th>English</th>
+              <th>Science</th>
+              <th>Work</th>
+            </tr>
+          </thead>
+          <tbody id="school-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- fanboy conjunctions -->
+    <div class="fanboys">
+      <ul class="fanboys-list"></ul>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -49,6 +49,17 @@ input {
     border-radius: 5px;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
 .board {
     display: flex;
     align-items: center;
@@ -56,6 +67,11 @@ input {
 
 li {
     list-style-type: none;
+}
+
+.contexts li {
+    display: flex;
+    justify-content: center;
 }
 
 .contexts {
@@ -106,8 +122,20 @@ button {
     gap: 5px;
 }
 
-button:hover {
-    filter: brightness(90%) !important;
+.page-btn {
+    width: 60%;
+    height: 130px;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 4px solid #000;
+    outline-offset: 4px;
+}
+
+button:hover,
+button:focus-visible {
+    filter: brightness(90%);
 }
 
 .fanboys {
@@ -123,4 +151,120 @@ button:hover {
     margin: auto 3px;
     display: flex;
     justify-content: center;
+}
+
+.home-btn {
+    background-color: #C8A400;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 80%;
+    height: 130px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.home-btn:hover {
+    background-color: #A88A00;
+}
+
+.keyboard-btn-container {
+  padding: 4px 10px;
+}
+
+.keyboard-btn {
+  background-color: #c8c8c8;
+  border: 1px solid #aaa;
+  width: 80%;
+  height: 80px;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.keyboard-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.keyboard-overlay.hidden {
+  display: none;
+}
+
+.keyboard-modal {
+  background: #d1d5db;
+  width: 100%;
+  max-width: 1800px;
+  border-radius: 16px 16px 0 0;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.keyboard-header {
+  margin-bottom: 8px;
+  padding: 0 4px;
+}
+
+.keyboard-preview {
+  display: block;
+  width: 100%;
+  background: white;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.keyboard-row button {
+  background: white;
+  border: none;
+  border-radius: 8px;
+  padding: 40px 0;
+  width: 112px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 0 #999;
+}
+
+.keyboard-row button:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+.key-wide {
+  width: 180px !important;
+}
+
+.key-space {
+  width: 680px !important;
+}
+
+.key-done {
+  background: #2D7FD0 !important;
+  color: white !important;
+}
+
+.keyboard-row.hidden {
+  display: none;
 }
